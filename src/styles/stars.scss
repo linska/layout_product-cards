@@ -1,8 +1,16 @@
-.rating {
+.stars {
   display: flex;
   align-items: flex-end;
   gap: 4px;
   margin: 16px 0;
+
+  @for $i from 0 through 5 {
+    &--#{$i} {
+      .stars__star:nth-child(-n + #{$i}) {
+        background-image: url('../images/star-active.svg');
+      }
+    }
+  }
 
   &__star {
     width: 16px;
@@ -10,10 +18,6 @@
     background-image: url('../images/star.svg');
     background-repeat: no-repeat;
     background-position: center center;
-
-    &--active {
-      background-image: url('../images/star-active.svg');
-    }
   }
 
   &__review {
