@@ -1,20 +1,12 @@
+@import 'variables';
 @import 'card';
 @import 'stars';
-
-:root {
-  --border: #f3f3f3;
-  --surface: #fff;
-  --background: #eee;
-  --main-accent: #060b35;
-  --blue-accent: #00acdc;
-  --secondary: #616070;
-}
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--background);
+  background-color: $background;
   font-family: Roboto, sans-serif;
 }
 
