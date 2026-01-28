@@ -1,0 +1,25 @@
+.rating {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  margin: 16px 0;
+
+  &__star {
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/star.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &--active {
+      background-image: url('../images/star-active.svg');
+    }
+  }
+
+  &__review {
+    font-size: 10px;
+    line-height: 1.4;
+    margin-left: auto;
+    color: var(--main-accent);
+  }
+}
